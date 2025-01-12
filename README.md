@@ -6,7 +6,8 @@
 
 ### 2. Run the .m3u Creation Script:
 
-- Use the Python script provided to generate an .m3u playlist file for each folder.
+- Use the [Python script](https://github.com/Vishwesh-Bhilare/music_tools/blob/main/extract_m3u.py) provided to generate an .m3u playlist file for each folder.
+  
 - Run the m3u extract script, example:
 ```py
 import os
@@ -30,7 +31,7 @@ create_m3u_playlist(music_directory)
 
 - Place all .m3u files into a single folder (e.g., X:\music\Playlists).
 
-- Use the prefix-adding script to update the .m3u files to include the folder prefix All Songs/:
+- Use the [prefix-adding script](https://github.com/Vishwesh-Bhilare/music_tools/blob/main/add_prefix_to_m3u.py) to update the .m3u files to include the folder prefix All Songs/:
 ```py
 import os
 
@@ -65,3 +66,41 @@ add_folder_to_m3u(m3u_folder, new_folder_prefix)
 
 - Some players (e.g., Poweramp) require the .m3u files and the All Songs folder to be in the same relative location.
 example structure: `X:\Music\All Songs, m3u files`
+
+---
+
+## Creating New Playlist
+
+### 1. Download New Songs:
+- Place the new songs into a temporary folder for the playlist.
+
+### 2. Run the `.m3u` Creation Script:
+- Use the script to generate an `.m3u` file for the new folder.
+
+### 3. Add the Folder Prefix:
+- Use the prefix-adding script to update the `.m3u` file by adding the `All Songs/` prefix.
+
+### 4. Move Songs to `All Songs` Folder:
+- Transfer the new songs from the temporary folder to the `All Songs` folder.
+
+### 5. Import the Updated `.m3u` File:
+- Ensure the `.m3u` file is in the same folder as the previous playlists and then import it into your music player.
+
+---
+
+## **Summary of Workflow**
+
+- **For Existing Playlists:**
+1. Put songs into separate folders.
+2. Run the `.m3u` creation script for each folder.
+3. Add the folder prefix to the `.m3u` files.
+4. Move all songs to `All Songs`.
+5. Import `.m3u` files into the music player.
+
+- **For New Playlists:**
+1. Download songs into a temporary folder.
+2. Create an `.m3u` file for the folder.
+3. Add the folder prefix to the `.m3u` file.
+4. Move songs to `All Songs`.
+5. Import the updated `.m3u` file.
+
