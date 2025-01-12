@@ -8,7 +8,7 @@
 
 - Use the Python script provided to generate an .m3u playlist file for each folder.
 - Run the m3u extract script, example:
-```
+```py
 import os
 
 def create_m3u_playlist(music_directory):
