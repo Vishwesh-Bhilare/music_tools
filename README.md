@@ -70,14 +70,14 @@ A powerful, flexible music management tool that automatically organizes your loc
    ```
    
 2. Run the installer:
-```bash
-python install.py
-```
+    ```bash
+    python install.py
+    ```
 
 3. First-time setup:
-```bash
-music-organizer --setup
-```
+    ```bash
+    music-organizer --setup
+    ```
 
 ### The installer will automatically:
 - Install required Python dependencies (mutagen)
